@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <title>Browser</title>
+    <style>
+        body{
+            padding-top:56px;
+        }
+        .carousel-inner img{
+            width: 100%;
+            height:100%;
+        }
+        .tab-content img{
+            width: 100%;
+            height: 330px;
+            margin-top: 50px;
+        }
+        .carousel-caption p{
+            font-size:1em;
+            letter-spacing: 3px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        #three .col-md-4{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .col-md-4 img{
+            width: 33.3%;
+            height: 110px;
+        }
+        hr{
+            width: 70%;
+        }
+        .tab-content p{
+            margin-top: 100px;
+        }
+        .nav-tabs{
+            margin-top: 50px;
+        }
+        .tab-pane h1{
+            color: #117a8b;
+            display: inline;
+            position: relative;
+            top: 50px;
+        }
+        .tab-pane span{
+            color: darkgrey;
+            font-size:1.2em;
+            position: relative;
+            top: 50px;
+        }
+        footer a{
+            float: right;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <a class="navbar-brand text-white href=#">Browser</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link href=#">综合</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link href=#">简述</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle href=#" data-toggle="dropdown" id="navbardrop">特点</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">Chrome</a>
+                        <a class="dropdown-item">Firefox</a>
+                        <a class="dropdown-item">Safari</a>
+                        <a class="dropdown-item">Opera</a>
+                        <a class="dropdown-item">IE</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">关于</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="carousel slide" data-ride="carousel" id="demo">
+<!--指示符-->
+    <ul class="carousel-indicators">
+        <li data-slide-to="0" data-target="#demo" class="active"></li>
+        <li data-slide-to="1" data-target="#demo"></li>
+        <li data-slide-to="2" data-target="#demo"></li>
+        <li data-slide-to="3" data-target="#demo"></li>
+        <li data-slide-to="4" data-target="#demo"></li>
+    </ul>
+<!--轮播图片-->
+    <div class="carousel-inner" id="top">
+        <div class="carousel-item active">
+            <img src="image/chrome.jpg">
+            <div class="carousel-caption">
+                <h2>Chrome</h2>
+                <p>Google Chrome是一款由Google公司开发的网页浏览器。</p>
+                <a class="btn btn-primary btn" role="button" href="https://www.google.cn">下 载</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/firefox.jpg">
+            <div class="carousel-caption">
+                <h2>Firefox</h2>
+                <p>Mozilla Firefox，中文俗称“火狐”（正式缩写为Fx或fx，非正式缩写为MF），是一个自由及开放源代码的网页浏览器。</p>
+                <a class="btn btn-primary btn" role="button" href="http://www.firefox.com.cn">下 载</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/Safari.jpg">
+            <div class="carousel-caption">
+                <h2>Safari</h2>
+                <p>Safari是苹果计算机的操作系统Mac OS中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。</p>
+                <a class="btn btn btn-primary" role="button" href="https://www.apple.com">下 载</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/oprea.jpg">
+            <div class="carousel-caption">
+                <h2>Oprea</h2>
+                <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
+                <a class="btn btn btn-primary" role="button" href="https://www.opera.com">下 载</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/ie.jpg">
+            <div class="carousel-caption">
+                <h2>IE</h2>
+                <p>Internet Explorer，是微软公司推出的一款网页浏览器。</p>
+                <a class="btn btn btn-primary" role="button" href="https://support.microsoft.com">下 载</a>
+            </div>
+        </div>
+    </div>
+<!--左右切换按钮-->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
+<div class="container" id="three">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="image/chrome2.png">
+            <h3>Chrome</h3>
+            <p>Google Chrome，是一款由Google公司开发的网页浏览器，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
+            <a class="btn btn-default" role="button" href="https://www.google.cn">下 载</a>
+        </div>
+        <div class="col-md-4">
+            <img src="image/firefox-01.png">
+            <h3>Firefox</h3>
+            <p>Mozilla Firefox，中文俗称“火狐”（正式缩写为Fx或fx，非正式缩写为MF），是一个自由及开放源代码的网页浏览器。</p>
+            <a class="btn btn-default" role="button" href="http://www.firefox.com.cn">下 载</a>
+        </div>
+        <div class="col-md-4">
+            <img src="image/safari2.png">
+            <h3>Safari</h3>
+            <p>Safari，是苹果计算机的操作系统Mac OS中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。</p>
+            <a class="btn btn-default" role="button" href="https://www.apple.com">下 载</a>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#chrome">Chrome</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#firefox">Firefox</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#safari">Safari</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#oprea">Oprea</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#ie">IE</a>
+        </li>
+    </ul>
+</div>
+<div class="tab-content">
+    <div id="chrome" class="container active tab-pane">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Chrome </h1>
+                <span>使用最广的浏览器</span>
+                <p>Google Chrome，是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和安全性，并创造出简单且有效率的使用者界面。</p>
+            </div>
+            <img src="image/chrome2.png" class="col-md-4">
+        </div>
+    </div>
+    <div id="firefox" class="container tab-pane fade">
+        <div class="row">
+            <img src="image/firefox-01.png" class="col-md-4">
+            <div class="col-md-8">
+                <h1>Firefox </h1>
+                <span>美丽的狐狸</span>
+                <p>Mozilla Firefox，中文俗称“火狐”（正式缩写为Fx或fx，非正式缩写为MF），是一个自由及开放源代码的网页浏览器，使用Gecko排版引擎，支持多种操作系统，如Windows、Mac OS X及GNU/Linux等。</p>
+            </div>
+        </div>
+    </div>
+    <div id="safari" class="container tab-pane fade">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Safari </h1>
+                <span>Mac用户首选</span>
+                <p>Safari，是苹果计算机的操作系统Mac OS中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。Safari 是一款浏览器、一个平台，也是对锐意创新的公开邀请。</p>
+            </div>
+            <img src="image/safari2.png" class="col-md-4">
+        </div>
+    </div>
+    <div id="oprea" class="container tab-pane fade">
+        <div class="row">
+            <img src="image/Qgdn.jpg" class="col-md-4">
+            <div class="col-md-8">
+                <h1>Oprea </h1>
+                <span>小众但易用</span>
+                <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器，是跨平台浏览器可以在Windows、Mac和Linux三个操作系统平台上运行。</p>
+            </div>
+        </div>
+    </div>
+    <div id="ie" class="container tab-pane fade">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>IE </h1>
+                <span>你懂的</span>
+                <p>Internet Explorer，是微软公司推出的一款网页浏览器。原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7、8、9、10、11版本)，简称IE。</p>
+            </div>
+            <img src="image/ie-blue.png" class="col-md-4">
+        </div>
+    </div>
+</div>
+<hr>
+<footer class="container">
+    <p>@罗健 2018/7/20</p>
+    <a href="#top">回到顶部</a>
+</footer>
+<!--Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>
